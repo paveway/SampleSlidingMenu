@@ -13,9 +13,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var slidingViewController: ECSlidingViewController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // ビューコントローラを生成する。
+        let vc = TopViewController()
+
+        // ナビゲーションコントローラを生成する。
+        let nc = UINavigationController(rootViewController: vc)
+
+        // ウィンドウを生成する。
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+
+        // ウィンドウのルートビューコントローラを設定する。
+        window?.rootViewController = nc
+
+        // ウィンドウを表示する。
+        window?.makeKeyAndVisible()
+
         return true
     }
 

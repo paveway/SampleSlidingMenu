@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="SampleSlidingMenu" customModuleProvider="target">
+            <connections>
+                <outlet property="bannerView" destination="qVe-oW-OoK" id="V1p-Jj-yc0"/>
+                <outlet property="tableView" destination="b8X-qN-vAL" id="y4f-ZR-MpR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="zev-Xf-Dgp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b8X-qN-vAL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVe-oW-OoK">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6qR-Vs-a5f"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="b8X-qN-vAL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BjA-W1-COf"/>
+                <constraint firstAttribute="trailing" secondItem="qVe-oW-OoK" secondAttribute="trailing" id="Fhx-aH-y5c"/>
+                <constraint firstAttribute="trailing" secondItem="b8X-qN-vAL" secondAttribute="trailing" id="H3g-fL-Y91"/>
+                <constraint firstItem="qVe-oW-OoK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NY9-Q7-Q4j"/>
+                <constraint firstItem="b8X-qN-vAL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V8O-Rl-FdP"/>
+                <constraint firstItem="b8X-qN-vAL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bkD-6H-wer"/>
+                <constraint firstItem="qVe-oW-OoK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nnh-IK-qlW"/>
+                <constraint firstItem="qVe-oW-OoK" firstAttribute="top" secondItem="b8X-qN-vAL" secondAttribute="bottom" id="rVl-Eo-ozg"/>
+                <constraint firstAttribute="bottom" secondItem="qVe-oW-OoK" secondAttribute="bottom" id="xMv-mD-S83"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
