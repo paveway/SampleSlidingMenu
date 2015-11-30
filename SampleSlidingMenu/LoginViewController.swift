@@ -20,6 +20,7 @@ class LoginViewController: UIViewController, UITableViewDataSource, UITableViewD
         view.backgroundColor = UIColor.whiteColor()
 
         navigationItem.title = "ログイン"
+        navigationItem.setHidesBackButton(true, animated: false)
 
         tableView.dataSource = self
         tableView.delegate = self
