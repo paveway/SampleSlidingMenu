@@ -35,6 +35,7 @@ class GistsListViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
+        
         setupSlidingView()
     }
 
